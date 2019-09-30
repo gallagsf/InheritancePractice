@@ -2,9 +2,24 @@ public class Worker extends Person{
 
     private double hourlyPayRate;
 
-    public Worker(String ID, String firstName, String lastName, String title, int YOB, double hourlyPayRate) {
+    public Worker(String ID, String firstName, String lastName, String title, int YOB, double hourlyPayRate) throws ExceptionInInitializerError{
         super(ID, firstName, lastName, title, YOB);
+        validateHourlyPayRate(hourlyPayRate);
         this.hourlyPayRate = hourlyPayRate;
+    }
+
+    public double getHourlyPayRate() {
+        return hourlyPayRate;
+    }
+
+    public void setHourlyPayRate(double hourlyPayRate) {
+        this.hourlyPayRate = hourlyPayRate;
+    }
+
+    private void validateHourlyPayRate(double hourlyPayRate) throws ExceptionInInitializerError {
+        if (hourlyPayRate < 0){
+            throw new ExceptionInInitializerError("hourlyPayRate can not be less than 0.");
+        }
     }
 
     public double calculateWeeklyPay(double hoursWorked) throws Exception {
@@ -34,7 +49,7 @@ public class Worker extends Person{
                 double overPay = (hoursWorked - 40) * hourlyPayRate *  1.5;
                 return "Hours worked at regular rate: 40.0 and they are getting " + underPay +
                         "\nHours worked at overtime rate: " + (hoursWorked - 40) + " and they are getting " + overPay +
-                        "\nTotal: " + (underPay + overPay) + "\n";
+                        "\nTotal: " + (underPay + overPay);
             }
         }
     }

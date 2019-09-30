@@ -7,7 +7,7 @@ public class Person {
     private String title;
     private int YOB;
 
-    public Person(String ID, String firstName, String lastName, String title, int YOB) {
+    public Person(String ID, String firstName, String lastName, String title, int YOB) throws ExceptionInInitializerError{
         validateAge(YOB);
         this.ID = ID;
         this.firstName = firstName;
