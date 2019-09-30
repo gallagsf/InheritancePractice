@@ -2,21 +2,22 @@
 
 ## Assignment Self Assessment:
 #### Reflection
-[//]: <> (share your thoughts on the assignment, things you learnt and would like to remember when you look back at this assignment)
+This assignment was not too difficult. The only parts that I struggled with were deciding on a way to implement certain methods called for in the assignment prompt. For example, "The return value should indicate that the weekly pay is a fraction of the yearly salary" is vague in specifying exactly what we are supposed to do, but I figured that vague descriptions in project outlines will be numerous in the field of software development, so I took the vagueness as part of the assignment.
+As for whether inheritance was appropriately implemented in this assignment, I feel that having the Worker subclass made sense, but having a separate SalaryWorker subclass derived from Worker was a bit unneccessary. I say this because creating an entirely separate class just for the purpose of having an annualSalary variable seems to be a bit of a stretch. I think that annualSalary could easily just be a variable in Worker that is calculated from hourlyPayRate within the constructor.
 
 
 #### Self Assessment
-- [ ] The program runs with no errors.
-- [ ] The Person class includes all the fields and methods specified above.
-- [ ] The Worker class includes all the fields and methods specified above.
-- [ ] Constructor calls super, passing all the person attributes.
-- [ ] The Salary Worker class includes all the fields and methods specified above.
-- [ ] Constructor calls super, passing all the person and worker attributes.
-- [ ] Proper display of the end result.
-- [ ] Proper usage of Git and GitHub (frequent commits, explanatory commit messages)
-- [ ] Although, the assignment covers the “technical” implementation of Inheritance. Do you think it was appropriately implemented? Why or why not? (include your answer in the notes sectiosn of the self assessment in the README file)
+- [x] The program runs with no errors.
+- [x] The Person class includes all the fields and methods specified above.
+- [x] The Worker class includes all the fields and methods specified above.
+- [x] Constructor calls super, passing all the person attributes.
+- [x] The Salary Worker class includes all the fields and methods specified above.
+- [x] Constructor calls super, passing all the person and worker attributes.
+- [x] Proper display of the end result.
+- [x] Proper usage of Git and GitHub (frequent commits, explanatory commit messages)
+- [x] Although, the assignment covers the “technical” implementation of Inheritance. Do you think it was appropriately implemented? Why or why not? (include your answer in the notes sectiosn of the self assessment in the README file)
 
-**Your Grade:**  /20
+**Your Grade:**  20/20
 
 **Notes:**
 
