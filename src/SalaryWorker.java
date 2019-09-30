@@ -1,3 +1,3 @@
-public class SalaryWorker {
+public class SalaryWorker{
 
 }
